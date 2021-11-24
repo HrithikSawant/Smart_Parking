@@ -16,13 +16,13 @@ public class Razorpay {
     }
 
     public static Order fetch_Payment(String id) throws RazorpayException{
-        RazorpayClient client = new RazorpayClient("rzp_test_OjRvNWbHuRbnNA", "3lvpfOjsjvFMGbEyDlgnkKOo");
+        RazorpayClient client = new RazorpayClient("", "");
         Order order = client.Orders.fetch(id);
         return order;
     }
     
     public static Order Generate_Order(double amt, int receipt) throws RazorpayException {
-        RazorpayClient client = new RazorpayClient("rzp_test_OjRvNWbHuRbnNA", "3lvpfOjsjvFMGbEyDlgnkKOo");
+        RazorpayClient client = new RazorpayClient("", "");
         JSONObject ob = new JSONObject();
         String receiptNo = Integer.toString(receipt);
         double amount = amt * 100;
