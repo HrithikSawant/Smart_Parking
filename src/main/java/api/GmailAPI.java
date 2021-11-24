@@ -94,10 +94,10 @@ public class GmailAPI {
         try {
             Map<String, Object> params = new LinkedHashMap<>();
             params.put("grant_type", "refresh_token");
-            params.put("client_id", "1098274330730-7rec8vsvu8frecpe0en5eodsfenbf51a.apps.googleusercontent.com"); //Replace this
-            params.put("client_secret", "PBbkJetKzbOvK9XyEBZZa2pq"); //Replace this
+            params.put("client_id", ""); //Replace this
+            params.put("client_secret", ""); //Replace this
             params.put("refresh_token",
-                    "1//04jQwKHQeRUK5CgYIARAAGAQSNwF-L9IrjM75nisopa-J2MQpIB7zDZYKTggHGl1-mYjRKzvb9FxlPkPWeQIwrzhMdkZ1JY6D-Yg"); //Replace this
+                    ""); //Replace this
 
             StringBuilder postData = new StringBuilder();
             for (Map.Entry<String, Object> param : params.entrySet()) {
@@ -142,8 +142,8 @@ public class GmailAPI {
                 .setJsonFactory(JSON_FACTORY)
                 .setClientSecrets(clientSecrets.getDetails().getClientId().toString(),
                         clientSecrets.getDetails().getClientSecret().toString())
-                .build().setAccessToken("ya29.a0ARrdaM-frco6YvWMjNe5z29lPIEO7xbIX48DIrkB3j9FVai8qunNdZdzelwrbO8ZIQixFdJbzqG8Yc0bADL-eV6AtmyQ2-zmj42p0XE7rjLKW1yfS0kWQrUpBpXKNzL7PYw1iLkDkWnS2UNR-Ca3gJJqVhI0").setRefreshToken(
-                "1//04jQwKHQeRUK5CgYIARAAGAQSNwF-L9IrjM75nisopa-J2MQpIB7zDZYKTggHGl1-mYjRKzvb9FxlPkPWeQIwrzhMdkZ1JY6D-Yg");//Replace this
+                .build().setAccessToken("").setRefreshToken(
+                "");//Replace this
         // Create Gmail service
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         service = new Gmail.Builder(HTTP_TRANSPORT, JSON_FACTORY, authorize)
