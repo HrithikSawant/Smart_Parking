@@ -1,0 +1,27 @@
+html {
+    background: url('./images/background.png') no-repeat center fixed;
+    background-size: cover;
+}
+.content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button {
+    width: 10rem;
+}
+/*.bg-img {
+    background-image: url('../jQuery/background.png');
+    background-image: url("./images/background.png");
+    height: 100%;
+
+     Center and scale the image nicely
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: auto;  
+}*/
